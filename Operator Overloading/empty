@@ -1,0 +1,4 @@
+Overloaded operators are functions.
+with special names the keyword operator
+followed by the symbol for the operator being defined.
+Any other function, an overloaded operator has a return type and a parameter list.
