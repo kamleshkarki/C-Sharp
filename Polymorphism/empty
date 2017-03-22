@@ -1,0 +1,3 @@
+Polymorphism can be static or dynamic.
+In static polymorphism the response to a function is determined at the compile time.
+In dynamic polymorphism, it is decided at run-time.
