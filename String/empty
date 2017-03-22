@@ -1,0 +1,2 @@
+string keyword to declare a string variable.
+The string keyword is an alias for the System.String class.
