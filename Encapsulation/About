@@ -1,0 +1,10 @@
+Encapsulation, in object oriented programming methodology, prevents access to implementation details.
+is defined 'as the process of enclosing one or more items within a physical or logical package'.
+Encapsulation is implemented by using access specifiers. 
+An access specifier defines the scope and visibility of a class member. C# supports the following
+access specifiers:
+1.Public
+2.Private
+3.Protected
+4.Internal
+5.Protected internal
