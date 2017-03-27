@@ -1,0 +1,29 @@
+using System;
+namespace PolymorphismApplication
+{
+    class Printdata
+    {
+        void print(int i)
+        {
+            Console.WriteLine("value of int: {0}", i);
+        }
+
+        void print(double f)
+        {
+            Console.WriteLine("value float: {0}", f);
+        }
+
+        void print(string s)
+        {
+            Console.WriteLine("value string: {0}", s);
+        }
+        static void Main(string[] args)
+        {
+            Printdata a = new Printdata();
+            a.print(15);// Call print to value integer
+            a.print(225.332);// Call print to value float
+            a.print("Welcome kamlesh in Dotnet");// Call print to string
+            Console.ReadLine();
+        }
+    }
+}
