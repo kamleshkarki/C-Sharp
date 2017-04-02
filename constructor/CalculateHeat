@@ -1,1 +1,46 @@
-A program in c# for Calculate Heat.........
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+ 
+namespace constructor_initialize
+{
+    class CalculateHeat
+    {
+        public int temp=0;
+        //Constructor Creation
+        public CalculateHeat(int val)
+        {
+            temp = Convert.ToInt32(val);
+        }
+ 
+        public CalculateHeat(string Message)
+        {
+            Console.WriteLine(Message.ToString());
+        }
+ 
+        public void calculate()
+        {
+            decimal fahrenheit = Convert.ToDecimal(temp * 1.8 + 32);
+            Console.WriteLine("{0} degree centigrade into fahrenheit = {1}", temp, fahrenheit);
+        }
+ 
+        //Destructor Initialization, It will clean memory at the end and frees up system resources.
+        ~CalculateHeat()
+        {
+            Console.WriteLine("Destructor Initializes, Cleanup Process Complete");
+            Console.ReadLine();
+        }
+    }
+    class Program
+    {
+        public static void Main(String[] args)
+        {
+            CalculateHeat cl = new CalculateHeat(36);
+            cl.calculate();
+ 
+            CalculateHeat c2 = new CalculateHeat("I am second constructor");          
+        }
+    }
+}
