@@ -1,0 +1,41 @@
+using System;
+
+namespace ConsoleExamples
+{
+    class Properties
+    {
+        private int _i = 20;
+        public int I
+        {
+            get
+            {
+                return _i;
+            }
+
+            set
+            {
+                if (value > 20)
+                {
+                    _i = value;
+                }
+                //else
+                //{
+                //    Console.WriteLine("setting the value is {0} ",_i);
+                //}
+                   
+            }
+        }
+    }
+    class MainClass
+    {
+        static void Main(string[] args)
+        {
+            Properties po = new Properties();
+            Console.WriteLine("Getting the value is {0} ", po.I);//getting the value //20
+            Console.WriteLine();
+            po.I = 25; //setting the value
+            Console.WriteLine("setting the value is {0} ", po.I);
+            Console.ReadLine();
+        }
+    }
+}
