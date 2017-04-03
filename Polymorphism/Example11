@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Program
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Program p = new Program();
+            p.save();
+            p.save("HELLO KAMLESH");
+            DateTime dt = DateTime.Now;
+            p.save("KAMLESH BROTHER", 19);
+            p.save("KAMLESH", 22, dt.ToShortDateString());
+            Console.ReadKey();
+
+        }
+        public void save()
+        {
+            Console.WriteLine("CLEAR WORD");
+        }
+        public void save(string name)
+        {
+            Console.WriteLine("{0} WELCOME TO THE WORD", name);
+        }
+        public void save(string name, int age)
+        {
+            Console.WriteLine("{0} AGE {1}", name, age);
+        }
+        public void save(string name, int age, string date)
+        {
+            Console.WriteLine("{0} IS {1} {2} ", name, age, date);
+        }
+    }
+}
