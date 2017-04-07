@@ -1,5 +1,13 @@
 Encapsulation, in object oriented programming methodology, prevents access to implementation details.
 is defined 'as the process of enclosing one or more items within a physical or logical package'.
+/*
+ Encapsulation is used to hide its members from outside class or interface, whereas
+	1.Encapsulation is the process of hiding irrelevant data from the user.
+	2.To understand encapsulation, consider an example of mobile phone. 
+	3.Whenever you buy a mobile, you don’t see how circuit board works.
+	4.You are also not interested to know how digital signal converts into analog signal and vice versa. 
+	5.These are the irrelevant information for the mobile user,that’s why it is encapsulated inside a cabinet.
+*/
 Encapsulation is implemented by using access specifiers. 
 An access specifier defines the scope and visibility of a class member. C# supports the following
 access specifiers:
