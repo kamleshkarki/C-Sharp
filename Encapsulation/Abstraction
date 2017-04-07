@@ -1,0 +1,65 @@
+/*
+Abstraction is used to show only essential features.
+	1.Abstraction is just opposite of Encapsulation. Abstraction is mechanism to show only relevant data to the user. 
+	2.Consider the same mobile example again. Whenever you buy a mobile phone, 
+	3.you see their different types of functionalities as camera, mp3 player, calling function, recording function, multimedia etc.
+	4.It is abstraction, because you are seeing only relevant information instead of their internal engineering.
+
+*/
+For Ex-This is the Abstract Base Class.
+ 
+     abstract class animal
+    {
+        public abstract void eat();
+        public void sound()
+        {
+            Console.WriteLine("dog can sound");
+        }
+    } 
+ if we make both of its methods abstract then 
+	this class would become a pure Abstract Base Class.we derive a class of 'dog' from the class animal.
+
+    abstract class animal
+    {
+        public abstract void eat();
+        public void sound()
+        {
+            Console.WriteLine("dog can sound");
+        }
+    }
+    class dog : animal
+    {
+        public override void eat() 
+	{
+	  Console.WriteLine("dog can eat");
+	 }
+    }
+
+For Ex-
+
+    class program
+    {
+        abstract class animal
+        {
+            public abstract void eat();
+            public void sound()
+            {
+                Console.WriteLine("dog can sound");
+            }
+        }
+        class dog : animal
+        {
+            public override void eat() 
+            {
+              Console.WriteLine("dog can eat");
+             }
+        }
+        static void Main(string[] args)
+        {
+            dog mydog = new dog();
+            animal thePet = mydog;
+            thePet.eat();
+            mydog.sound();
+        }
+    }
+
