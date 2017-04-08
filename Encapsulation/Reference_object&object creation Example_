@@ -1,0 +1,52 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsolePrograms
+{
+    abstract class laptop
+    {
+        public abstract void KeyBoard();
+        public void Battery()
+        {
+            Console.WriteLine("Battery is working fine");
+        }
+        public abstract void TouchPad();
+        public abstract string Screen(string s);
+    }
+    class servicecenter : laptop
+    { 
+        static void Main(string[] args)
+        {
+            //  servicecenter sc = new servicecenter();// Reference object
+            laptop sc;
+            sc= new servicecenter();  //object creation
+            sc.KeyBoard();
+            sc.TouchPad();
+            sc.Screen("implemented");
+            sc.Battery();
+            Console.ReadLine();
+        }
+
+        public override void KeyBoard()
+        {
+            Console.WriteLine("Keyboard is implementetd");
+        }
+
+        public override string Screen(string s)
+        {
+            Console.WriteLine("screen is implementetd");
+            return s;
+        }
+        public void ServiceCenterMember()
+        {
+            Console.WriteLine("service center method");
+        }
+        public override void TouchPad()
+        {
+            Console.WriteLine("touch is implementetd");
+        }
+    }
+}
