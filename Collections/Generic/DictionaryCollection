@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsolePrograms
+{
+    class DictionaryCollection
+    {
+        static void Main(string[] args)
+        {
+            Dictionary<int, string> dicobj = new Dictionary<int, string>();
+            dicobj.Add(1, "hari");
+            dicobj.Add(2, "ravi");
+            dicobj.Add(3, "rakesh");
+            dicobj.Add(4, "suresh");
+            Console.WriteLine("No of elements in dictionary is {0} ",dicobj.Count);//4
+            Console.WriteLine();
+            Console.WriteLine("Remove an element from dictionary {0} ",dicobj.Remove(3));//true
+            Console.WriteLine();
+            Console.WriteLine("After Removing No of elements in dictionary is {0} ", dicobj.Count);//3
+            Console.WriteLine();
+            Console.WriteLine("printing an element from dictionary is {0} ",dicobj[4]);//suresh
+            Console.WriteLine();
+            Console.WriteLine("Elements in dictionary is : ");
+            foreach (var item in dicobj.Keys)
+            {
+                Console.WriteLine("Elements are : "+item);
+            }
+            Console.WriteLine();
+            Console.WriteLine("Clearing all elements from dictionary ");
+            dicobj.Clear();
+            Console.WriteLine("After Clearing No of elements in dictionary is {0} ", dicobj.Count);
+            Console.ReadLine();
+               
+        }
+    }
+}
