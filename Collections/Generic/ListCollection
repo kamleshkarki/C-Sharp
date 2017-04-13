@@ -1,0 +1,67 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsolePrograms
+{
+    class ListCollection
+    {
+        static void Main(string[] args)
+        {
+            List<int> l = new List<int>();
+            l.Add(10);
+            l.Add(20);
+            l.Add(30);
+            l.Add(40);
+            l.Add(50);
+            Console.WriteLine("No of Elements in List collection {0} ",l.Count);//5
+            Console.WriteLine();
+            Console.WriteLine("Remove an element from list collection {0} ",l.Remove(30));// true
+            Console.WriteLine();
+            Console.WriteLine("After removing No of Elements in List collection {0} ", l.Count);//4
+            Console.WriteLine();
+            Console.WriteLine("Elements in list collection :");
+            foreach (var item in l)
+            {
+                Console.WriteLine("Elements are : "+item);//10,20,40,50
+            }
+            Console.WriteLine();
+            Console.WriteLine("Printing an element at specified index {0} ",l[3]);//50
+            Console.WriteLine();
+            Console.WriteLine("Inserting an element at specified index");
+            l.Insert(2, 60);
+            Console.WriteLine();
+            Console.WriteLine("After inserting No of Elements in List collection {0} ", l.Count);
+            Console.WriteLine();
+            Console.WriteLine("Elements in list collection after inserting at specified index :");
+            foreach (var item in l)
+            {
+                Console.WriteLine("Elements are : " + item);//10,20,40,50
+            }
+            Console.WriteLine();
+            Console.WriteLine("Removing an element at specified index ");
+            l.RemoveAt(3);
+            Console.WriteLine("After Removing element at specified index,No of Elements in List is {0} ", l.Count);
+            Console.WriteLine();
+            Console.WriteLine("Elements in list collection after Removing at specified index :");
+            foreach (var item in l)
+            {
+                Console.WriteLine("Elements are : " + item);//10,20,40,50
+            }
+            Console.WriteLine();
+            int sum = 0;
+            foreach (int item in l)
+            {
+                sum = sum + item;
+            }
+            Console.WriteLine("Addition of Elements in list is {0} ",sum);
+            Console.WriteLine();
+            Console.WriteLine("Clearing all elements from list ");
+            l.Clear();
+            Console.WriteLine("After clearing no of elements in list is {0} ",l.Count);
+            Console.ReadLine();
+        }
+    }
+}
