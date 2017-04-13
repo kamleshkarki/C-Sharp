@@ -1,0 +1,47 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsolePrograms
+{
+    class QueueCollection
+    {
+        static void Main(string[] args)
+        {
+            Queue s = new Queue();
+            s.Enqueue(10);
+            s.Enqueue(20);
+            s.Enqueue(30);
+            s.Enqueue(40);
+            s.Enqueue(50);
+            Console.WriteLine("No of Elements in the Queue {0} ", s.Count);//5
+            Console.WriteLine();
+            Console.WriteLine("Remove an element from Queue {0} ", s.Dequeue()); //10
+            Console.WriteLine();
+            Console.WriteLine("After removing elements in Queue is {0} ", s.Count);//4
+            Console.WriteLine();
+            Console.WriteLine("Printing all elements of Queue : ");
+            foreach (var i in s)
+            {
+                Console.WriteLine("Elements are : {0} ", i);//20,30,40,50
+            }
+            Console.WriteLine();
+            Console.WriteLine("Addition of elements in Queue :");
+            int sum = 0;
+            foreach (int i in s)
+            {
+                sum = sum + i;
+            }
+            Console.WriteLine("Addition is {0} ", sum);//140
+            Console.WriteLine();
+            Console.WriteLine("Clear all elements from Queue collection");
+            s.Clear();
+            Console.WriteLine();
+            Console.WriteLine("After clearing No of element in Queue {0} ", s.Count);//0
+            Console.ReadLine();
+        }
+    }
+}
