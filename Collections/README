@@ -1,0 +1,8 @@
+Collection classes serve various purposes,such as allocating 
+memory dynamically to elements and accessing a list of items on the basis of an index etc. 
+These classes create collections of objects of the Object class.
+which is the base class for all data types in C#
+
+/*some group of same and diffrence object's, to store and retrive the data, we are using the collection*/ 
+ex--[BAG]--we can put many diffrent item's 
+[PEN]-- diffrente company are make diffrence type's of pen's
