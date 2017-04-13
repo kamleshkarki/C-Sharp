@@ -1,0 +1,46 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsolePrograms
+{
+    class StackGeneric
+    {
+        static void Main(string[] args)
+        {
+            Stack<int> s = new Stack<int>();
+            s.Push(10);
+            s.Push(20);
+            s.Push(30);
+            s.Push(40);
+            s.Push(50);
+            Console.WriteLine("No of Elements in the stack {0} ", s.Count);//5
+            Console.WriteLine();
+            Console.WriteLine("Remove an element from stack {0} ", s.Pop()); //50
+            Console.WriteLine();
+            Console.WriteLine("After removing elements in stack is {0} ", s.Count);//4
+            Console.WriteLine();
+            Console.WriteLine("Printing all elements of stack : ");
+            foreach (var i in s)
+            {
+                Console.WriteLine("Elements are : {0} ", i);//40,30,20,10
+            }
+            Console.WriteLine();
+            Console.WriteLine("Addition of elements in stack :");
+            int sum = 0;
+            foreach (int i in s)
+            {
+                sum = sum + i;
+            }
+            Console.WriteLine("Addition is {0} ", sum);//100
+            Console.WriteLine();
+            Console.WriteLine("Clear all elements from stack collection");
+            s.Clear();
+            Console.WriteLine();
+            Console.WriteLine("After clearing No of element in stack {0} ", s.Count);//0
+            Console.ReadLine();
+        }
+    }
+}
