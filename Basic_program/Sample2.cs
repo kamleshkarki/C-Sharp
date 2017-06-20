@@ -10,11 +10,12 @@ namespace ConsolePrograms
     {
         public void Addition()
         {
+            int a,b,c;
             Console.WriteLine("Please enter a value :");
-            int a = Convert.ToInt32(Console.ReadLine());
+            a = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Please enter b value :");
-            int b = Convert.ToInt32(Console.ReadLine());
-            int c = a + b;
+            b = Convert.ToInt32(Console.ReadLine());
+            c = a + b;
             Console.WriteLine("Addition of a and b is "+c);
         }
 
