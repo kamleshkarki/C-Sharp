@@ -1,0 +1,62 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AddAction
+{
+    class call
+    {
+        public void display()
+        {
+            Console.WriteLine("Hello C#");
+        }
+
+    class print
+        {
+            public void pnumber()
+            {
+                Console.WriteLine("1.----------------------------------");
+                Console.WriteLine("Number Sequence is");
+                Console.WriteLine("2.----------------------------------");
+                for (int i = 0; i <= 5; i++)
+                {
+                 Console.WriteLine("Number Sequence is:" + i);
+                }
+                Console.WriteLine("3.----------------------------------");
+            }
+
+        }
+        class star {
+            public void patten()
+            {
+                Console.WriteLine("PATTEN");
+                for (int j = 0; j <= 5; j++)
+                {
+                    for(int K=1; K<=j;K++)
+                    {
+                        Console.Write("*");
+                        
+                    }
+                    Console.WriteLine();
+                }
+            }
+        }
+        
+        static void Main(string[] args)
+        {
+            call q1 = new call();
+            print q2 = new print();
+            star q3 = new star();
+            Class1 q4 = new Class1();
+            stop q5 = new stop();
+            q1.display();
+            q2.pnumber();
+            q3.patten();
+            q4.run();
+            q5.stp();
+            Console.ReadLine();
+        }
+    }
+}
