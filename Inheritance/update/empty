@@ -1,0 +1,87 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Oppss
+{
+    class car
+    {
+        public void display()
+        {
+            Console.WriteLine("1.Car Color is Red");
+        }
+
+        public void start()
+        {
+            Console.WriteLine("2. move on to next Stop");
+        }
+
+        public void stop()
+        {
+            Console.WriteLine("3. Now stop");
+        }
+
+    }
+
+    class updatecar : car
+    {
+        public void display()
+        {
+            Console.WriteLine("4.Now Car Color is Yellow");
+        }
+
+    }
+     
+    class Book : updatecar
+    {
+        public void display()
+        {
+            Console.WriteLine("5.Comming soon");
+
+        }
+        public void start()
+        {
+            Console.WriteLine("6.Color is Black");
+        }
+
+         public void stop()
+        {
+            Console.WriteLine("7.no color");
+        }
+
+    }
+    class Runable : Book
+    {
+        public void display()
+        {
+            Console.WriteLine("8.Welcome Back");
+        }
+       public void start()
+        {
+            Console.WriteLine("9.Iam still wating for you");
+        }
+
+       private void stop()
+        {
+            Console.WriteLine("10.I can see you");
+
+        }
+        
+        static void Main(string[] args)
+        {
+            Runable q1 = new Runable();
+            //updatecar q2 = new updatecar();
+            //Book q1 = new Book();
+            //car q1 = new car();
+            q1.display();
+            q1.start();
+            q1.stop();
+            //q2.display();
+            //q2.start();
+            //q2.stop();
+            Console.ReadLine();
+        }
+    }
+}
